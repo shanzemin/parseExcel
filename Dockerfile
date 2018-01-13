@@ -34,6 +34,6 @@ COPY docker-process.json /usr/src/app/
 RUN npm install pm2 -g
 RUN npm install
 
-CMD [ "pm2-docker", "docker-process.json" ]
+CMD [ "pm2-runtime", "start", "docker-process.json" ]
 
 EXPOSE 8080
