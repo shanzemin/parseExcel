@@ -11,7 +11,9 @@
       "env_production" : {
         "NODE_ENV": "production",
         "PORT": 8080
-      }
+      },
+      "error_file": "/dev/stderr",
+      "out_file": "/dev/stdout"
     }
   ]
 }

@@ -33,7 +33,7 @@ COPY docker-process.json /usr/src/app/
 # RUN npm install -g cnpm --registry=https://registry.npm.taobao.org
 RUN npm install pm2 -g
 RUN npm install
-RUN pm2 update
+# RUN pm2 update
 
 CMD [ "pm2-runtime", "start", "docker-process.json" ]
 
