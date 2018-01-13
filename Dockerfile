@@ -5,6 +5,7 @@ MAINTAINER szm
 LABEL "version"="0.0.1"
 
 RUN apt-get update
+RUN apt-get install --yes wget
 RUN apt-get install --yes curl
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN sudo apt-get install -y nodejs
